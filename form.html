@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заполните форму и отправьте</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+
+<html>
+<body>
+    
+<h3 align="center">Отправка данных на удаленный сервер</h3>
+<!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
+<!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
+<form action="https://google.com" target="_blank" method="get">
+    
+    <fieldset>
+        <legend>Контактная информация</legend>
+    <p>Имя: <input type="Text" name="last_name" size=20  value="Анна"></p>
+    <p>Телефон: <input type="tel" name="phone" size=20 value="89096687433"></p>
+    <p>Email: <input type="email" name="email" size=20 value="mail@gmail.com"></p>
+    <button type="Submit" name="submit"  value="Отправить">Отправить</button>
+
+    </fieldset>
+</form>
+
+<form action="https://google.com" target="_blank" method="get">
+<fieldset>
+        <legend>Личные данные</legend>
+    <p>Возраст <input type="Number" name="age"  min="0" max="100"></p>
+    <p>Категория вашего подарка
+        <select name="type">
+            <OPTION value="одежда">Одежда</OPTION>
+            <OPTION value="техника">Техника</OPTION>
+            <OPTION value="аксессуар">Аксессуар</OPTION>
+        </select>
+        <form action="https://google.com" target="_blank" method="get">
+<fieldset>
+    <p>Напишите ваши варианты: <TEXTAREA cols=80 rows=4 name="textarea" ></TEXTAREA></p>
+    
+    <p>Понравился ли формат сайта?
+        <input type="Radio" name="mark" value="yes" checked> Да
+        <input type="Radio"  name="mark" value="no" checked> Нет
+
+</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Выбор контакта</legend>
+    <p>Какой способ связи предпочитаете
+        <input type="Checkbox" name="mark" value="tg" checked>Телеграм
+        <input type="Checkbox"  name="mark" value="vk" checked>Вконтакте
+        <input type="Checkbox" name="mark" value="sms" checked>Смс
+        <input type="Checkbox" name="mark" value="mail" checked>Почта
+    </p>
+    <button type="Submit" name="submit"  value="Отправить">Отправить</button>
+    </fieldset>
+    
+</form>
